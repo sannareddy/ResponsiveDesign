@@ -1,0 +1,652 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Standard Meta -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">	 
+		<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+		
+
+		<link rel="stylesheet" type="text/css" href="css/audienceowl_profile1.2.css">
+		
+		
+		<script src="javascript/jquery.js"></script>
+		<script src="javascript/semantic.min.js"></script>
+		
+		<script src="javascript/audienceOwl_profile1.1.js"></script>
+		<script src="javascript/sss.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/sss.css">
+		<script>
+			boot();
+		</script>
+	</head>
+	<body lang="en">
+		<div class="ui grid">
+			<div class="row" id="header-row">
+				<div class="sixteen wide column">
+					<div class="ui center middle aligned stackable grid" id="header-row-inner-grid">
+						<div class="row">
+							<div class="six wide column eight-wide-tabs-from-six" id="ao-logo">
+								<img src="images/logo.png"></img>
+							</div>
+							<div class="one wide computer only column header-link-n-img">
+								<div class="header-link"><a href="#">Home</a></div>
+								<div class="header-img"></div>
+							</div>
+							<div class="two wide computer only column header-link-n-img">
+								<div class="header-link"><a href="#">How it works</a></div>
+								<div class="header-img"></div>
+							</div>
+							<div class="one wide computer only column header-link-n-img">
+								<div class="header-link"><a href="#">Pricing</a></div>
+								<div class="header-img"></div>
+							</div>
+							<div class="one wide computer only column header-link-n-img">
+								<div class="header-link"><a href="#">Profile</a></div>
+								<div class="header-img active"></div>
+							</div>
+							<div class="one wide computer only column header-link-n-img">
+								<div class="header-link"><a href="#">Profiles</a></div>
+								<div class="header-img"></div>
+							</div>
+							<div class="two wide tablet only column">
+								<div class="hamburger" id="tab-hamburger">
+									<div class="ham-icon" id="tab-ham-icon">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</div>	
+							</div>
+							<div class="four wide only column  six-wide-tabs-from-four" id="signout-n-msg">
+								Hello, <span id="username">User</span>
+								<a href="#" class="grey-round-btn">Sign out</a>
+							</div>
+							<div class="two wide mobile only column" id="menu-container">
+								<div class="ui pointing dropdown  menu-button"   id="menu-button">
+									<a class="text">Menu</a>
+									<i class="dropdown icon"></i>
+									<div class="menu">
+										<a class="item" id="menu-home">Home</a>
+										<a class="item" id="menu-how-it-works">How it works</a>
+										<a class="item" id="menu-pricing">Pricing</a>
+										<a class="item" id="menu-profile">Profile</a>
+										<a class="item" id="menu-profiles">Profiles</a>
+									</div>
+								</div>
+								<!--<div class="hamburger" id="mobile-hamburger">
+									<div class="ham-icon">
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</div>-->	
+							</div>
+						</div>	
+					</div>	
+				</div>
+			</div>
+			<div class="row" id="whole-body-container">
+				<div id="sidebar-container">
+					<ul class="menu-group">
+						<li class="menu-item"><a href="#">Home</a></li>
+						<li class="menu-item"><a href="#">How it works</a></li>
+						<li class="menu-item"><a href="#">Pricing</a></li>
+						<li class="menu-item"><a href="#">Profile</a></li>
+						<li class="menu-item"><a href="#">Profiles</a></li>
+					</ul>
+				</div>
+				<div class="sixteen wide column" id="body-container-column">
+					<div id="body-container">
+						<div class="ui  center aligned grid">		
+							<div class="two wide computer only column">
+							</div>
+							<div class="one wide tablet only column">
+							</div>
+							<div class="twelve wide column fourteen-wide-tabs-from-twelve sixteen-wide-mobiles-from-twelve" id="whole-body-column">
+								<div class="ui stackable center aligned grid">
+									<div class="row" id="profile-row">
+										<div class="ten wide column sixteen-wide-mobile-from-ten" id="profile-column">
+											<div class="ui stackable middle aligned grid" id="profile-row-inner-grid">
+												<div class="row" id="profile-pic-frame-row">
+													<div class="six wide column">
+														<div class="profile-pic-frame">
+															<img src="images/2.jpg" class="circular ui image profile-pic"></img>
+														</div>					
+													</div>
+													<div class="ten wide column" id="profile-details">
+														<div class="ui grid">
+															<div class="row">
+																<div class="sixteen wide column">
+																	<div id="profile-name">Paz Lenchantin XXX </div>
+																</div>
+															</div>
+															<div id="profile-mail" class="row">
+																<div class="two wide column"><i class="mail icon"></i></div>
+																<div class="fourteen wide column">paz@thepixies.com</div>
+															</div>
+															<div id="profile-age" class="row">
+																<div class="two wide column"><img src="images/cake.png" class="icon"></img></div>
+																<div class="fourteen wide column">40 years old</div>
+															</div>
+															<div id="profile-gender" class="row">
+																<div class="two wide column"><i class="user icon"></i></div>
+																<div class="fourteen wide column">Female</div>
+															</div>
+															<div id="profile-location" class="row">
+																<div class="two wide column"><i class="map marker icon"></i></div>
+																<div class="fourteen wide column">San Francisco, CA, USA</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row" id="location-map-n-icon-row">
+													<div class="sixteen wide column">
+														<div class="ui grid" id="location-map-n-icon-row-inner-grid">
+															<div class="sixteen wide column" id="location-map-container">
+																<div id="location-map" style="background-image:url('images/map.png')">
+																</div>
+															</div>
+															<div id="map-icon-strip" class="sixteen wide column">
+																<i class="star icon"></i>
+																<i class="repeat icon"></i>
+																<i class="comment icon"></i>
+																<i class="trash icon"></i>															
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="one wide tablet computer only column" id="divider" style="background-color:white !important;max-width:15px !important;padding:0px !important"></div>
+										<div class="five wide column" id="social-media">
+											<div class="ui grid" id="social-media-inner-grid">
+												<div class="sm-id-n-icon row" id="fb-id-n-icon">
+													<div class="sm-icon three wide column" id="fb-icon"><img src="images/fblogo.png"></img></div>
+													<div class="thirteen  wide column">
+														<span class="sm-id" id="fb-id">/pazlenchantin</span>
+													</div>
+												</div>
+												<div class="sm-id-n-icon row" id="tw-id-n-icon">
+													<div class="sm-icon three wide column" id="tw-icon"><img src="images/twlogo.png"></img></div>
+													<div class="thirteen wide column">
+														<span class="sm-id" id="tw-id">@PazLenchantin</span>
+													</div>
+												</div>
+												<div class="sm-id-n-icon row"  id="li-id-n-icon">
+													<div class="sm-icon three wide column" id="ln-icon">
+														<img src="images/lilogo.png"></img>
+													</div>
+													<div class="thirteen wide column">
+														<span class="sm-id" id="tw-id">Paz Lenchantin</span>
+													</div>	
+												</div>
+												<div class="row sm-id-n-icon" id="add-note">
+													<div class="one wide mobile only column"></div>
+													<div class="ten wide column six-wide-mobile-from-ten">
+														<div class="orange-rnd-link">
+															<a href="">
+																<i class="calendar icon no-mobile"></i> 
+																<span class="orange-rnd-link-msg">Add Note</span> 
+																<i class="triangle down icon"></i>
+															</a>
+														</div>														
+													</div>	
+													<div class="two wide mobile only column">
+													</div>
+													<div class="six wide mobile only column">
+														<div class="orange-rnd-link">
+															<a href="">
+																<i class="tag icon no-mobile"></i> 
+																<span class="orange-rnd-link-msg">Add Tag</span> 
+																<i class="triangle down icon"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="tablet computer only row sm-id-n-icon" id="add-tag">
+													<div class="ten wide column">
+														<div class="orange-rnd-link">
+															<a href="">
+																<i class="tag icon"></i> 
+																<span class="orange-rnd-link-msg">Add Tag</span> 
+																<i class="triangle down icon"></i>
+															</a>
+														</div>
+													</div>																
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row" id="organizations-row">
+										<div class="sixteen wide column">
+											<div class="ui grid" id="organizations-row-inner-grid">
+												<div class="row" id="organizations-title-row">
+													<div class="sixteen wide column" id="organizations-title-holder">
+														<div id="organizations-title">
+															Organizations
+														</div>
+													</div>
+												</div>
+												<div class="row" id="organizations-table-row">
+													<div class="sixteen wide column" id="organizations-table-holder">
+														<div id="organizations-table">
+															<table id="org-table">
+																<tr>
+																	<td>Name</td>
+																	<td>Title</td>
+																	<td>Start Date</td>
+																	<td>End Date</td>
+																</tr>
+																<tr>
+																	<td>A Perfect Circle</td>
+																	<td>Basist / Strings</td>
+																	<td>May 2000</td>
+																	<td>July 2004</td>
+																</tr>
+																<tr>
+																	<td>Queens of The Stone Age</td>
+																	<td>String</td>
+																	<td>April 2002</td>
+																	<td>February 2003</td>
+																</tr>
+																<tr>
+																	<td>A Perfect Circle</td>
+																	<td>Basist / Strings</td>
+																	<td>May 2000</td>
+																	<td>July 2004</td>
+																</tr>
+																<tr>
+																	<td>Queens of The Stone Age</td>
+																	<td>String</td>
+																	<td>April 2002</td>
+																	<td>February 2003</td>
+																</tr>	
+																<tr>
+																	<td>Queens of The Stone Age</td>
+																	<td>String</td>
+																	<td>April 2002</td>
+																	<td>February 2003</td>
+																</tr>
+																<tr>
+																	<td>A Perfect Circle</td>
+																	<td>Basist / Strings</td>
+																	<td>May 2000</td>
+																	<td>July 2004</td>
+																</tr>
+																<tr>
+																	<td>Queens of The Stone Age</td>
+																	<td>String</td>
+																	<td>April 2002</td>
+																	<td>February 2003</td>
+																</tr>	
+																<tr>
+																	<td>Queens of The Stone Age</td>
+																	<td>String</td>
+																	<td>April 2002</td>
+																	<td>February 2003</td>
+																</tr>
+																<tr>
+																	<td>A Perfect Circle</td>
+																	<td>Basist / Strings</td>
+																	<td>May 2000</td>
+																	<td>July 2004</td>
+																</tr>
+																<tr>
+																	<td>Queens of The Stone Age</td>
+																	<td>String</td>
+																	<td>April 2002</td>
+																	<td>February 2003</td>
+																</tr>																
+															</table>
+														</div>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="gallery-row">
+										<div class="sixteen wide column">
+											<div class="ui grid" id="gallery-inner-grid">
+												<div class="row" id="gallery-title-row">
+													<div class="sixteen wide column" id="gallery-title">
+														Gallery
+													</div>
+												</div>
+												<div class="row" id="gallery-images-row">
+													<div class="sixteen wide column" id="gallery-images-column">
+														<div class="gallery-images no-mobile" id="gallery-images"> 
+															<img src="images/1.jpg"></img>
+															<img src="images/2.jpg"></img>
+															<img src="images/3.jpg"></img>
+															<img src="images/4.jpg"></img>
+															<img src="images/owl.png"></img>
+															<img src="images/1.jpg"></img>
+															<img src="images/2.jpg"></img>
+															<img src="images/3.jpg"></img>
+															<img src="images/4.jpg"></img>
+															<img src="images/owl.png"></img>
+															<img src="images/1.jpg"></img>
+															<img src="images/2.jpg"></img>
+															<img src="images/3.jpg"></img>
+															<img src="images/4.jpg"></img>
+															<img src="images/owl.png"></img>
+															<img src="images/1.jpg"></img>
+															<img src="images/2.jpg"></img>
+															<img src="images/3.jpg"></img>
+															<img src="images/4.jpg"></img>
+															<img src="images/owl.png"></img>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="websites-n-chathandles-row" class="websites-n-chathandles-row row" style="text-align:left">
+										<div class="ten wide column" id="websites-column">
+											<div class="ui grid" id="websites-inner-grid">
+												<div class="row" id="websites-title-row">
+													<div class="sixteen wide column" id="websites-title">
+														Websites
+													</div>
+												</div>
+												<div class="row" id="websites-ids-rows">
+													<div class="sixteen wide column" id="website-ids-column">
+														<a href="www.pazlenchantin.com" class="website-id">pazlenchantin.com</a>
+														<a href="www.pazlenchantin.com" class="website-id">zwan.com</a>
+														<a href="www.pazlenchantin.com" class="website-id">thepixies.com</a>
+														<a href="www.pazlenchantin.com" class="website-id">entranceband.com</a>
+														<a href="www.pazlenchantin.com" class="website-id">themarsvolta.com</a>
+														<a href="www.pazlenchantin.com" class="website-id">soundcloud.com/dayaw</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="one wide tablet computer only column" id="websites-n-chathandles-divider" style="background-color:white !important;max-width:15px !important;padding:0px !important">
+											
+										</div>
+										<div class="five wide column" id="chathandles-column">
+											<div class="ui grid" id="chathandles-inner-grid">
+												<div class="row" id="chathandles-title-row">
+													<div class="sixteen wide column" id="chathandles-title">
+														Chat Handles
+													</div>
+												</div>
+												<div class="row" id="chathandles-ids">
+													<div class="sixteen wide column">
+														<div class="ui middle aligned grid" id="chathandles-ids-inner-grid">
+															<div class="equal height row">
+																<div class="four wide column three-wide-mobile-from-four chathandles-logo">
+																	<img src="images/skype-logo.png"></img>
+																</div>
+																<div class="twelve wide column thirteen-wide-mobile-from-twelve">
+																	pazlenchantin
+																</div>
+															</div>
+															<div class="equal height row">
+																<div class="four wide column three-wide-mobile-from-four chathandles-logo">
+																	<img src="images/yahoo-logo.png"></img>
+																</div>
+																<div class="twelve wide column thirteen-wide-mobile-from-twelve">
+																	pazlenchantin
+																</div>
+															</div>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+									</div>	
+									<div class="row" id="social-profiles-row">
+										<div class="sixteen wide column" id="social-profiles-column">
+											<div class="ui grid" id="social-profiles-inner-grid">
+												<div class="row" id="social-profiles-title-row">
+													<div class="sixteen wide column" id="social-profile-title">
+														Social Profiles
+													</div>
+												</div>
+												<div class="row social-profile-info" id="Angle-list-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="angle-list-logo">
+																	<img src="images/angle-logo.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="angle-list-name">
+																	Angle List
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="angle-list-view-btn">
+																	<a href="#" class="view-btn active">View</a>
+																</div>
+															</div>
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-username">Username:pazlenchantin</span>
+																</div>
+															</div>	
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-bio">Bio:Pazlenchanin(born on December 12, 1973) is an Argentine American musician. She is known for playing bass in various bands, including Entrance, A Perfect Circle, pixies and Zwan.   </span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="row social-profile-info" id="friend-feed-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="friend-feed-logo">
+																	<img src="images/ff-logo.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="friend-feed-name">
+																	Friendfeed
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="friend-feed-view-btn">
+																	<a href="#" class="view-btn active">View</a>
+																</div>
+															</div>
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-username">Username:pazlenchantin</span>
+																</div>
+															</div>	
+															
+														</div>
+													</div>
+												</div>
+												
+												<div class="row social-profile-info" id="google-profile-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="google-profile-logo">
+																	<img src="images/gp-logo.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="google-profile-name">
+																	Google Profile
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="google-profile-view-btn">
+																	<a href="#" class="view-btn active">View</a>
+																</div>
+															</div>
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-username">Username:pazlenchantin</span>
+																</div>
+															</div>	
+															
+														</div>
+													</div>
+												</div>
+												
+												<div class="row social-profile-info" id="picassa-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="picassa-logo">
+																	<img src="images/picassa.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="picassa-name">
+																	Picassa
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="picassa-view-btn">
+																	<a href="#" class="view-btn">View</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="row social-profile-info" id="quora-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="quora-logo">
+																	<img src="images/quora.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="quora-name">
+																	Quora
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="quora-view-btn">
+																	<a href="#" class="view-btn active">View</a>
+																</div>
+															</div>
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-username">Username:pazlenchantin</span>
+																</div>
+															</div>	
+															
+														</div>
+													</div>
+												</div>
+												
+												<div class="row social-profile-info" id="plancast-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="plancast-logo">
+																	<img src="images/plancast.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="plancast-name">
+																	Plancast
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="plancast-view-btn">
+																	<a href="#" class="view-btn active">View</a>
+																</div>
+															</div>
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-username">Username:pazlenchantin</span>
+																</div>
+															</div>		
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-bio">Bio:Pazlenchanin(born on December 12, 1973) is an Argentine American musician. She is known for playing bass in various bands, including Entrance, A Perfect Circle, pixies and Zwan.   </span>
+																</div>
+															</div>	
+														</div>
+													</div>
+												</div>
+												
+												<div class="row social-profile-info" id="four-square-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="four-square-logo">
+																	<img src="images/foursquare.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="four-square-name">
+																	Foursquare
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="four-square-view-btn">
+																	<a href="#" class="view-btn active">View</a>
+																</div>
+															</div>
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-username">Username:pazlenchantin</span>
+																</div>
+															</div>																
+														</div>
+													</div>
+												</div>
+												
+												<div class="row social-profile-info" id="vimeo-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="vimeo-logo">
+																	<img src="images/vimeo.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="vimeo-name">
+																	Vimeo
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="vimeo-view-btn">
+																	<a href="#" class="view-btn">View</a>
+																</div>
+															</div>								
+														</div>
+													</div>
+												</div>
+												
+												<div class="row social-profile-info" id="you-tube-info">
+													<div class="sixteen wide column social-profile-info-column">
+														<div class="ui middle aligned grid social-profile-info-inner-grid">
+															<div class="row">
+																<div class="two wide column spn-logo three-wide-mobile-from-two" id="you-tube-logo">
+																	<img src="images/youtube.png"></img>
+																</div>
+																<div class="four wide column spn-name six-wide-mobile-from-four" id="you-tube-name">
+																	YouTube
+																</div>
+																<div class="ten wide column spn-view-btn seven-wide-mobile-from-ten" id="four-square-view-btn">
+																	<a href="#" class="view-btn active">View</a>
+																</div>
+															</div>
+															<div class="row">
+																<div class="sixteen wide column">
+																	<span class="snp-username">Username:pazlenchantin</span>
+																</div>
+															</div>																
+														</div>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="row" id="footer-row">
+										<div class="sixteen wide column sixteen-wide-mobile-from-eight" id="footer-links">
+											<span class="footer-tag"><a href="#">CASE STUDIES</a></span>
+																
+											<span class="footer-tag"><a href="#">FAQS </a></span>
+										
+											<span class="footer-tag"><a href="#">ABOUT</a></span>
+											
+											<span class="footer-tag"><a href="#">CONTACT</a></span>										
+										
+											<span class="footer-tag"><a href="#">TERMS</a></span>
+						
+											<span class="footer-tag"><a href="#">PRIVACY POLICY</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="one wide tablet only column">
+							</div>
+							<div class="two wide computer only column">
+							</div>
+						</div>								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mobile-indicator"></div>
+		<div id="tablet-indicator"></div>
+	</body>
+</html>	
