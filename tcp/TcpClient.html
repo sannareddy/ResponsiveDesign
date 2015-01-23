@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<script>
+			var ws="";	
+			if(!"WebSocket" in window){
+				alert('Your Browser Does Not Support WebSockets');					
+			}else{
+				alert('Congrats your browser supports WebSocket');					
+			}			
+			function start(){
+				alert('start');
+				if("WebSocket" in window){
+					ws = new WebSocket("ws://localhost:1341/");
+				}else{
+				    alert('Your Browser Does Not Support WebSockets');	
+				}			
+			};							
+			ws.onopen = function(){
+				alert("Enjoy............!");
+			};
+			ws.onmessage = function (event){ 
+				alert('recieved');
+				var msg = event.data+"<br/>";
+				document.getElementById("received-msgs").innerHTML=document.getElementById("received-msgs").innerHTML+event.data;
+			};
+			ws.onclose = function(){ 
+				alert("Terminated"); 
+			};
+			function send(){
+				alert('sent'+document.getElementById("message").value);
+				var msg=document.getElementById("message").value;
+				ws.send(msg);
+			}
+		</script>
+		<style>
+			div.display-panel{
+			  height:150px;
+			  border:1px solid blue;
+			  width:500px;
+			  margin-bottom: 10px;
+			}
+			textarea{
+			  width:500px;
+			  margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="received-msgs" class="display-panel">
+		
+		
+		</div>
+		<div>
+				<div id="msg-panel"><div id="msg-panel-label">Enter User Message:<div><textarea id="message" cols="100" rows="2" value="Message"></textarea></div>
+				<div id="btn-panel">
+					<button type="button" onclick="start()">StartChat</button>
+					<button type="button" onclick="send()">Send</button>					
+				</div>
+			
+		</div>
+	</body>
+	
+</html>
