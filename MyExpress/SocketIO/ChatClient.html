@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			var socket;				
+			function start(){
+				if(!socket){
+					socket = io();
+					socket.on('message',function (msg){ 
+						msg += "<br/>";
+						document.getElementById("received-msgs").innerHTML=document.getElementById("received-msgs").innerHTML+msg;
+					});
+				}
+			};													
+			function send(){
+				var msg=document.getElementById("message").value;
+				socket.emit('message', msg);
+				document.getElementById("message").value='';
+			}
+		</script>
+		<style>
+			div.display-panel{
+			  height:150px;
+			  border:1px solid blue;
+			  width:500px;
+			  margin-bottom: 10px;
+			  overflow: scroll;
+			}
+			textarea{
+			  width:500px;
+			  margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="received-msgs" class="display-panel">
+		
+		
+		</div>
+		<div>
+				<div id="msg-panel"><div id="msg-panel-label">Enter User Message:<div><textarea id="message" cols="100" rows="2" value="Message"></textarea></div>
+				<div id="btn-panel">
+					<button type="button" onclick="start()">StartChat</button>
+					<button type="button" onclick="send()">Send</button>					
+				</div>
+			
+		</div>
+	</body>
+	
+</html>
